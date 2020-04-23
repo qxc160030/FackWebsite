@@ -1,0 +1,60 @@
+
+.button {
+	background-color: #1686d9;
+	border: 2px solid white;
+	border-radius: 30px;
+	text-decoration: none;
+	padding: 10px 28px;
+	color: white;
+	margin-top: 10px;
+	display: inline-block;
+}
+.button:hover{
+    background-color: white;
+    color: #1686d9;
+    border: 2px solid #1686d9;
+}
+
+.bg-modal {
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-contents {
+	height: 300px;
+	width: 500px;
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	border-radius: 4px;
+}
+
+#navigation{
+    word-spacing: 10px;
+    
+}
+#nav{
+    justify-content: space-between;
+}
+
+#image1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:400px;
+    width:700px;
+}
+.inputItem{
+    text-align:center;
+}
+input{
+    width : 500px;
+    height: 30px;
+}
