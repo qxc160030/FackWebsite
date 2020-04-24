@@ -1,21 +1,30 @@
 
-
+//iteration
 function randomlize()
 {
-        randomNumber = Math.floor(Math.random() * 3)+1;
-        console.log(randomNumber)
-        if(randomNumber == 1)
+        if(typeof(Storage) !== "undefined") {
+                if (sessionStorage.clickcount) {
+                  sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+                } else {
+                  sessionStorage.clickcount = 1;
+                }
+        }
+
+        if( sessionStorage.clickcount == 1)
         {
                 document.getElementById("textbox1").style.display = "flex";
         }
-        else if(randomNumber == 2)
+        else if(sessionStorage.clickcount == 2)
         {
                 document.getElementById("textbox2").style.display = "flex";
         }
-        else if(randomNumber == 3)
+        else
         {
                 document.getElementById("textbox3").style.display = "flex";
         }
+       
         
 }
+
+
 
